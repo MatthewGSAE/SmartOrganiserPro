@@ -38,7 +38,8 @@ public class QuickOrganiserWindow : EditorWindow
         GUILayout.Label("Asset Management", EditorStyles.boldLabel);
         if (GUILayout.Button("Organise Project Assets"))
         {
-            logOutput = AssetOrganiser.OrganiseAssets();
+            AssetOrganiser.OrganiseProjectAssets();
+            logOutput = "Project assets have been organised. Check Console for full report.";
         }
 
         GUILayout.Space(10);
